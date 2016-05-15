@@ -10,8 +10,8 @@ class addmvc
     			$page_name 			= $_POST['page_name'];
     			$controllers_class 	= $_POST['controllers_class'];
     			$router_method		= $_POST['router_method'];
-    		echo '<div style="text-align:right"> <font style="color:red">views بداخل المجلد</font> '.$page_name.'.page.php تم انشاء ملف <br />
-			 <font style="color:red">controllers بداخل المجلد</font> '.$_POST['controllers_class'].'.php تم انشاء ملف
+    		echo '<div style="text-align:right"> <font style="color:red">views inne i mappen</font> '.$page_name.'.page.php varit etablerad<br />
+			 <font style="color:red">controllers بداخل المجلد</font> '.$_POST['controllers_class'].'.php filen skapades
     				</div>';
 ## Add router
     		$router = 'cliprz_application/config/router.php';
@@ -102,7 +102,7 @@ fwrite($controllers_handle, $controllers_new_data);
 ## End Create a File.page.php in controllers
     		exit();
     		} else {
-    		echo 'يجب ملئ جميع الحقول .<br /> <a href="'.c_url('addmvc').'">رجوع</a>';
+    		echo 'Alla fält är obligatoriska.<br /> <a href="'.c_url('addmvc').'">tillbaka</a>';
     		exit();
     		
     	}
